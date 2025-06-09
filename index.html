@@ -321,7 +321,7 @@ function urut(n) {
     
 }
 	
-  function jawab(mmb,mapel){ 
+  function jawab(mmb,mapel,kls){ 
     
      
      mbtn2.style.display='none'
@@ -330,7 +330,7 @@ function urut(n) {
     mjb.innerHTML="<span style='font-size:20px'><i class='fa fa-spinner fa-spin' style='font-size:30px;color:black'></i> Mohon Tunggu ...</span>"
     var xhr = new XMLHttpRequest();
    
-     ab=" https://script.google.com/macros/s/AKfycbw7lOO5vfQ_BWAcgbsibJ5DZwDl19wjbg8mLY1fP5tzB9a4HaJzHDRZm3QMaiUhkosnCg/exec/exec?kode="+mmb;
+     ab=" https://script.google.com/macros/s/AKfycbw7lOO5vfQ_BWAcgbsibJ5DZwDl19wjbg8mLY1fP5tzB9a4HaJzHDRZm3QMaiUhkosnCg/exec/exec?kode="+mmb+"&kls="+kls;
              
     xhr.open('get', ab, true);
     xhr.onerror = function() {
